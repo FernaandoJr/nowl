@@ -1,6 +1,7 @@
 "use client"
 
 import { SpeedControl } from "@/components/speed-control"
+import { AboutDialog } from "@/components/about-dialog"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
@@ -24,7 +25,8 @@ export function ComposeView({
 
   return (
     <div className="flex min-h-dvh flex-col bg-background">
-      <nav className="flex items-center justify-end p-2">
+      <nav className="flex items-center justify-end gap-1 p-2">
+        <AboutDialog />
         <ThemeToggle />
       </nav>
 

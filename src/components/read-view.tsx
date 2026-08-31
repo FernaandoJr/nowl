@@ -3,6 +3,7 @@
 import { ArrowLeftIcon } from "lucide-react"
 import { useEffect } from "react"
 
+import { AboutDialog } from "@/components/about-dialog"
 import { OrpWord } from "@/components/orp-word"
 import { SpeedControl } from "@/components/speed-control"
 import { ThemeToggle } from "@/components/theme-toggle"
@@ -77,7 +78,10 @@ export function ReadView({ text, wpm, onWpmChange, onBack }: ReadViewProps) {
         >
           <ArrowLeftIcon className="size-[14px]" />
         </Button>
-        <ThemeToggle />
+        <div className="flex items-center gap-1">
+          <AboutDialog />
+          <ThemeToggle />
+        </div>
       </nav>
 
       <main className="mx-auto flex w-full max-w-xl flex-1 flex-col px-4 pb-8">
