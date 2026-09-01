@@ -7,18 +7,20 @@
 <p align="center"><strong>next one word</strong> — RSVP reader. Paste a text, read one word at a time.</p>
 
 <p align="center">
-  <a href="https://github.com/FernaandoJr/now">github.com/FernaandoJr/now</a>
+  <a href="https://now.fernaandojr.dev">now.fernaandojr.dev</a>
+  ·
+  <a href="https://github.com/FernaandoJr/now">GitHub</a>
 </p>
 
 ---
 
-NOW flashes a long text as a single word on a fixed point so your eyes stop scanning the page. No account. Nothing leaves the browser.
+NOW flashes a long text as a single word on a fixed point so your eyes stop scanning the page.
 
 ## Features
 
 - Paste → set pace → **Now**. Fullscreen RSVP with an ORP pivot letter (theme color, not Spritz red).
 - Smart timing: longer words and punctuation get extra dwell.
-- Speed 100–700 (default 250). The UI shows the number only, never “WPM”.
+- Speed 100–700 (default 250). The UI shows the number only, never “WPM”. Arrow keys change speed by 10.
 - Pause / resume (tap or Space). Esc returns to paste. End of text stays on the last word until you go back.
 - Last text, speed, and up to 20 previous readings in `localStorage`.
 - Light / dark theme. PT / EN via cookie (`NEXT_LOCALE`), no locale in the URL.
@@ -38,11 +40,12 @@ Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadcn/ui (B
 | Key | Action |
 | --- | --- |
 | Space / tap | Pause or resume. At the end, back to paste |
+| ↑ ↓ ← → | Speed ±10 |
 | Esc | Back to paste |
 
-## Privacy
+## Storage
 
-No server-side user data. Keys in this browser only:
+Keys in this browser only:
 
 | Key | What |
 | --- | --- |
@@ -87,8 +90,8 @@ Engine is small and independent of the UI: `tokenize` → `orp` → `pacing` →
 
 ## Deploy
 
-Any Node host that runs `pnpm build && pnpm start`. [Vercel](https://vercel.com) works with zero extra config.
+Live at [now.fernaandojr.dev](https://now.fernaandojr.dev). Any Node host that runs `pnpm build && pnpm start`. [Vercel](https://vercel.com) works with zero extra config.
 
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE). Fernando Divino de Moraes Junior © 2026

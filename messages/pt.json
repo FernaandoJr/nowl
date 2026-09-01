@@ -45,7 +45,6 @@
     "p2": "Cole o que quiser ler, escolha a velocidade, aperte <now>Now</now>. Cada palavra cai num ponto fixo; palavras longas e pontuação ganham um pouco mais de tempo.",
     "pause": "Pausar / continuar",
     "speedKeys": "Velocidade",
-    "backPaste": "Voltar para colar",
-    "privacy": "Sem conta. Texto e velocidade ficam só neste navegador."
+    "backPaste": "Voltar para colar"
   }
 }

@@ -2,6 +2,17 @@
   "name": "now",
   "version": "0.1.0",
   "private": true,
+  "description": "NOW — next one word. RSVP reader: paste text and read one word at a time.",
+  "homepage": "https://now.fernaandojr.dev",
+  "license": "MIT",
+  "author": "FernaandoJr",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FernaandoJr/now.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FernaandoJr/now/issues"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -45,7 +45,6 @@
     "p2": "Paste something you want to read, set a speed, press <now>Now</now>. Each word lands on a fixed point; longer words and punctuation get a little more time.",
     "pause": "Pause / resume",
     "speedKeys": "Speed",
-    "backPaste": "Back to paste",
-    "privacy": "No account. Text and speed stay in this browser only."
+    "backPaste": "Back to paste"
   }
 }

@@ -76,7 +76,6 @@ export function AboutDialog() {
               <Kbd>Esc</Kbd>
             </div>
           </div>
-          <p className="text-[13px] text-muted-foreground">{t("privacy")}</p>
         </div>
       </DialogContent>
     </Dialog>
