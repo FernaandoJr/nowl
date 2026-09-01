@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "NOW",
+    "description": "Next one word — read one word at a time."
+  },
+  "nav": {
+    "languages": "Languages",
+    "portuguese": "Portuguese",
+    "english": "English"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "toLight": "Switch to light",
+    "toDark": "Switch to dark"
+  },
+  "hero": {
+    "body": "NOW flashes a long text as a single word on a fixed point, so your eyes stop scanning the page. Paste something, set a pace, press Now.",
+    "openReader": "Open reader"
+  },
+  "compose": {
+    "paste": "Paste text",
+    "textLabel": "Text to read",
+    "now": "Now",
+    "speed": "Reading speed"
+  },
+  "read": {
+    "back": "Back",
+    "progress": "Reading progress",
+    "pause": "Pause",
+    "resume": "Resume",
+    "finished": "Finished, go back"
+  },
+  "history": {
+    "aria": "Reading history",
+    "title": "History",
+    "description": "Previous readings in this browser",
+    "empty": "None yet.",
+    "clear": "Clear"
+  },
+  "about": {
+    "aria": "About NOW",
+    "title": "NOW",
+    "tagline": "next one word",
+    "p1": "A simple reader that shows one word at a time so you can move through long text faster, with less eye travel across the page.",
+    "p2": "Paste something you want to read, set a speed, press <now>Now</now>. Each word lands on a fixed point; longer words and punctuation get a little more time.",
+    "shortcutPause": "Tap or Space — pause / resume",
+    "shortcutEsc": "Esc — back to paste",
+    "shortcutEnd": "At the end, tap to return with your text still there",
+    "privacy": "No account. Text and speed stay in this browser only."
+  }
+}

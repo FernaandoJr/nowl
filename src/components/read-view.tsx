@@ -1,23 +1,35 @@
 "use client"
 
 import { ArrowLeftIcon } from "lucide-react"
+import { useTranslations } from "next-intl"
 import { useEffect } from "react"
 
 import { AboutDialog } from "@/components/about-dialog"
+import { HistoryDialog } from "@/components/history-dialog"
+import { LanguageSwitcher } from "@/components/language-switcher"
 import { OrpWord } from "@/components/orp-word"
 import { SpeedControl } from "@/components/speed-control"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Button } from "@/components/ui/button"
 import { useReader } from "@/hooks/use-reader"
+import type { HistoryEntry } from "@/lib/storage"
 
 type ReadViewProps = {
   text: string
   wpm: number
   onWpmChange: (wpm: number) => void
   onBack: () => void
+  onSelectHistory: (entry: HistoryEntry) => void
 }
 
-export function ReadView({ text, wpm, onWpmChange, onBack }: ReadViewProps) {
+export function ReadView({
+  text,
+  wpm,
+  onWpmChange,
+  onBack,
+  onSelectHistory,
+}: ReadViewProps) {
+  const t = useTranslations("read")
   const { word, progress, playing, finished, togglePause } = useReader({
     text,
     wpm,
@@ -59,7 +71,7 @@ export function ReadView({ text, wpm, onWpmChange, onBack }: ReadViewProps) {
         aria-valuemin={0}
         aria-valuemax={100}
         aria-valuenow={Math.round(progress * 100)}
-        aria-label="Reading progress"
+        aria-label={t("progress")}
       >
         <div
           className="h-full bg-primary transition-[width] duration-200 ease-out"
@@ -72,14 +84,16 @@ export function ReadView({ text, wpm, onWpmChange, onBack }: ReadViewProps) {
           type="button"
           variant="ghost"
           size="icon-sm"
-          className="size-[30px] text-foreground"
-          aria-label="Back"
+          className="size-9 text-foreground"
+          aria-label={t("back")}
           onClick={onBack}
         >
-          <ArrowLeftIcon className="size-[14px]" />
+          <ArrowLeftIcon className="size-[18px]" />
         </Button>
         <div className="flex items-center gap-1">
+          <HistoryDialog onSelect={onSelectHistory} />
           <AboutDialog />
+          <LanguageSwitcher />
           <ThemeToggle />
         </div>
       </nav>
@@ -90,7 +104,7 @@ export function ReadView({ text, wpm, onWpmChange, onBack }: ReadViewProps) {
           className="flex flex-1 cursor-pointer flex-col items-center justify-center outline-none"
           onClick={handleWordArea}
           aria-label={
-            finished ? "Finished, go back" : playing ? "Pause" : "Resume"
+            finished ? t("finished") : playing ? t("pause") : t("resume")
           }
         >
           <OrpWord word={word} className="min-h-12 px-2" />

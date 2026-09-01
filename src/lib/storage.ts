@@ -1,6 +1,8 @@
 import { DEFAULT_WPM, clampWpm } from "@/lib/pacing"
 
 const KEY = "now:v1"
+const HISTORY_KEY = "now:history"
+const MAX_HISTORY = 20
 
 export type StoredState = {
   text: string
@@ -36,6 +38,69 @@ export function saveStored(state: StoredState): void {
         wpm: clampWpm(state.wpm),
       })
     )
+  } catch {
+    // ignore quota / private mode
+  }
+}
+
+export type HistoryEntry = {
+  id: string
+  text: string
+  wpm: number
+  at: number
+}
+
+function isHistoryEntry(value: unknown): value is HistoryEntry {
+  if (!value || typeof value !== "object") return false
+  const entry = value as HistoryEntry
+  return (
+    typeof entry.id === "string" &&
+    typeof entry.text === "string" &&
+    typeof entry.wpm === "number" &&
+    typeof entry.at === "number"
+  )
+}
+
+export function loadHistory(): HistoryEntry[] {
+  if (typeof window === "undefined") return []
+  try {
+    const raw = window.localStorage.getItem(HISTORY_KEY)
+    if (!raw) return []
+    const parsed = JSON.parse(raw) as unknown
+    if (!Array.isArray(parsed)) return []
+    return parsed.filter(isHistoryEntry)
+  } catch {
+    return []
+  }
+}
+
+export function rememberReading(text: string, wpm: number): HistoryEntry[] {
+  const trimmed = text.trim()
+  if (!trimmed) return loadHistory()
+
+  const rest = loadHistory().filter((entry) => entry.text.trim() !== trimmed)
+  const next: HistoryEntry[] = [
+    {
+      id: crypto.randomUUID(),
+      text,
+      wpm: clampWpm(wpm),
+      at: Date.now(),
+    },
+    ...rest,
+  ].slice(0, MAX_HISTORY)
+
+  try {
+    window.localStorage.setItem(HISTORY_KEY, JSON.stringify(next))
+  } catch {
+    // ignore quota / private mode
+  }
+  return next
+}
+
+export function clearHistory(): void {
+  if (typeof window === "undefined") return
+  try {
+    window.localStorage.removeItem(HISTORY_KEY)
   } catch {
     // ignore quota / private mode
   }

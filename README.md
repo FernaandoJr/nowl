@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center">
+  <img src="public/now-ip-a1.svg" width="96" height="96" alt="NOW" />
+</p>
 
-## Getting Started
+<h1 align="center">NOW</h1>
 
-First, run the development server:
+<p align="center"><strong>next one word</strong> — RSVP reader. Paste a text, read one word at a time.</p>
+
+<p align="center">
+  <a href="https://github.com/FernaandoJr/now">github.com/FernaandoJr/now</a>
+</p>
+
+---
+
+NOW flashes a long text as a single word on a fixed point so your eyes stop scanning the page. No account. Nothing leaves the browser.
+
+## Features
+
+- Paste → set pace → **Now**. Fullscreen RSVP with an ORP pivot letter (theme color, not Spritz red).
+- Smart timing: longer words and punctuation get extra dwell.
+- Speed 100–700 (default 250). The UI shows the number only, never “WPM”.
+- Pause / resume (tap or Space). Esc returns to paste. End of text stays on the last word until you go back.
+- Last text, speed, and up to 20 previous readings in `localStorage`.
+- Light / dark theme. PT / EN via cookie (`NEXT_LOCALE`), no locale in the URL.
+- Languages with spaces (Portuguese, English, Spanish, French…). CJK is out of scope.
+
+## Stack
+
+Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadcn/ui (Base UI) · next-intl · next-themes · pnpm
+
+## Usage
+
+| | |
+| --- | --- |
+| `/` | Landing |
+| `/read` | Paste, speed, history, about, then RSVP |
+
+| Key | Action |
+| --- | --- |
+| Space / tap | Pause or resume. At the end, back to paste |
+| Esc | Back to paste |
+
+## Privacy
+
+No server-side user data. Keys in this browser only:
+
+| Key | What |
+| --- | --- |
+| `now:v1` | Current text + speed |
+| `now:history` | Last 20 started readings |
+| `NEXT_LOCALE` | `pt` or `en` |
+
+## Setup
+
+Node 20+ and [pnpm](https://pnpm.io) 11.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm build    # production build
+pnpm start    # serve the build
+pnpm lint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Layout
 
-## Learn More
+```
+src/
+  app/            # / and /read
+  components/     # landing, compose, RSVP, i18n, theme
+  hooks/          # useReader
+  i18n/           # next-intl, cookie locale
+  lib/            # tokenize, ORP, pacing, storage
+messages/         # pt.json, en.json
+```
 
-To learn more about Next.js, take a look at the following resources:
+Engine is small and independent of the UI: `tokenize` → `orp` → `pacing` → `useReader`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## i18n
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+`localePrefix: "never"`. Locale comes from `NEXT_LOCALE`, default `pt`. Copy lives in `messages/`. Flag toggle is the same pattern as [mosaiq](https://github.com/FernaandoJr/mosaiq).
 
-## Deploy on Vercel
+## Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Any Node host that runs `pnpm build && pnpm start`. [Vercel](https://vercel.com) works with zero extra config.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+[MIT](LICENSE)

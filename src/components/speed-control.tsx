@@ -1,5 +1,7 @@
 "use client"
 
+import { useTranslations } from "next-intl"
+
 import { Slider } from "@/components/ui/slider"
 import { MAX_WPM, MIN_WPM } from "@/lib/pacing"
 
@@ -9,9 +11,11 @@ type SpeedControlProps = {
 }
 
 export function SpeedControl({ wpm, onChange }: SpeedControlProps) {
+  const t = useTranslations("compose")
+
   return (
     <div className="flex flex-col items-center gap-2">
-      <span className="text-[24px] font-medium tracking-[-0.15px] text-foreground">
+      <span className="select-none text-[24px] font-medium tracking-[-0.15px] text-foreground">
         {wpm}
       </span>
       <Slider
@@ -24,7 +28,7 @@ export function SpeedControl({ wpm, onChange }: SpeedControlProps) {
           const next = Array.isArray(value) ? value[0] : value
           if (typeof next === "number") onChange(next)
         }}
-        aria-label="Reading speed"
+        aria-label={t("speed")}
       />
     </div>
   )

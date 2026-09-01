@@ -1,7 +1,10 @@
 import type { Metadata } from "next"
+import { NextIntlClientProvider } from "next-intl"
+import { getLocale, getMessages, getTranslations } from "next-intl/server"
 import { Inter } from "next/font/google"
 
 import { ThemeProvider } from "@/components/theme-provider"
+import { routing } from "@/i18n/routing"
 
 import "./globals.css"
 
@@ -11,17 +14,29 @@ const inter = Inter({
   weight: ["400", "500"],
 })
 
-export const metadata: Metadata = {
-  title: "NOW",
-  description: "Next one word — read one word at a time.",
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("meta")
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      languages: Object.fromEntries(routing.locales.map((l) => [l, "/"])),
+    },
+  }
 }
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/">) {
+  const locale = await getLocale()
+  const messages = await getMessages()
+
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} h-full`}>
+    <html lang={locale} suppressHydrationWarning className={`${inter.variable} h-full`}>
       <body className="min-h-full font-sans antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
+          <NextIntlClientProvider locale={locale} messages={messages}>
+            {children}
+          </NextIntlClientProvider>
         </ThemeProvider>
       </body>
     </html>

@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "NOW",
+    "description": "Next one word — leia uma palavra de cada vez."
+  },
+  "nav": {
+    "languages": "Idiomas",
+    "portuguese": "Português",
+    "english": "Inglês"
+  },
+  "theme": {
+    "toggle": "Alternar tema",
+    "toLight": "Mudar para claro",
+    "toDark": "Mudar para escuro"
+  },
+  "hero": {
+    "body": "O NOW mostra um texto longo uma palavra de cada vez, num ponto fixo, para os olhos não varrerem a página. Cole algo, escolha o ritmo, aperte Now.",
+    "openReader": "Abrir leitor"
+  },
+  "compose": {
+    "paste": "Cole o texto",
+    "textLabel": "Texto para ler",
+    "now": "Now",
+    "speed": "Velocidade da leitura"
+  },
+  "read": {
+    "back": "Voltar",
+    "progress": "Progresso da leitura",
+    "pause": "Pausar",
+    "resume": "Continuar",
+    "finished": "Fim, voltar"
+  },
+  "history": {
+    "aria": "Histórico de leituras",
+    "title": "Histórico",
+    "description": "Leituras anteriores neste navegador",
+    "empty": "Nenhuma ainda.",
+    "clear": "Limpar"
+  },
+  "about": {
+    "aria": "Sobre o NOW",
+    "title": "NOW",
+    "tagline": "next one word",
+    "p1": "Um leitor simples que mostra uma palavra de cada vez, para você atravessar um texto longo mais rápido, com menos deslocamento dos olhos.",
+    "p2": "Cole o que quiser ler, escolha a velocidade, aperte <now>Now</now>. Cada palavra cai num ponto fixo; palavras longas e pontuação ganham um pouco mais de tempo.",
+    "shortcutPause": "Toque ou Espaço — pausar / continuar",
+    "shortcutEsc": "Esc — voltar para colar",
+    "shortcutEnd": "No fim, toque para voltar com o texto ainda lá",
+    "privacy": "Sem conta. Texto e velocidade ficam só neste navegador."
+  }
+}
