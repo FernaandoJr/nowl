@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "NOW — Next One Word",
+    "title": "NOW — Next One Word | Leitor RSVP, uma palavra por vez",
     "titleTemplate": "%s · NOW",
-    "description": "Leitor RSVP grátis. Cole um texto e leia uma palavra de cada vez, num ponto fixo — leitura mais rápida, menos deslocamento dos olhos. Sem conta.",
+    "description": "Leitor RSVP grátis. Cole um texto e leia uma palavra por vez, num ponto fixo.",
     "keywords": [
       "RSVP",
       "leitura rápida",
@@ -12,8 +12,8 @@
       "NOW",
       "next one word"
     ],
-    "readTitle": "Leitor",
-    "readDescription": "Cole um texto no NOW e leia uma palavra de cada vez. Ajuste o ritmo, pause com Espaço, mude a velocidade com as setas."
+    "readTitle": "NOW — Leitor RSVP: cole texto e leia uma palavra por vez",
+    "readDescription": "Cole um texto no NOW e leia uma palavra de cada vez. Ajuste o ritmo, pause com Espaço."
   },
   "nav": {
     "languages": "Idiomas",

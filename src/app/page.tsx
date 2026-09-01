@@ -18,9 +18,6 @@ export async function generateMetadata(): Promise<Metadata> {
         "x-default": SITE_URL,
       },
     },
-    openGraph: {
-      url: SITE_URL,
-    },
   }
 }
 

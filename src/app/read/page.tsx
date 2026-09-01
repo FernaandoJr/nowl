@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server"
 
 import { JsonLd } from "@/components/json-ld"
 import { buildReadJsonLd } from "@/lib/seo"
-import { SITE_URL } from "@/lib/site"
+import { SITE_NAME, SITE_URL } from "@/lib/site"
 
 import { ReadPageClient } from "./read-page-client"
 
@@ -13,7 +13,9 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = t("readDescription")
 
   return {
-    title,
+    title: {
+      absolute: title,
+    },
     description,
     alternates: {
       canonical: "/read",
@@ -24,13 +26,26 @@ export async function generateMetadata(): Promise<Metadata> {
       },
     },
     openGraph: {
+      type: "website",
       url: `${SITE_URL}/read`,
+      siteName: SITE_NAME,
       title,
       description,
+      images: [
+        {
+          url: "/og.png",
+          width: 1200,
+          height: 630,
+          alt: "NOW — next one word. RSVP reader.",
+          type: "image/png",
+        },
+      ],
     },
     twitter: {
+      card: "summary_large_image",
       title,
       description,
+      images: ["/og.png"],
     },
     robots: {
       index: true,
