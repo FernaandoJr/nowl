@@ -1,50 +1,99 @@
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { NextIntlClientProvider } from "next-intl"
 import { getLocale, getMessages, getTranslations } from "next-intl/server"
 import { Inter } from "next/font/google"
 
 import { ThemeProvider } from "@/components/theme-provider"
 import { routing } from "@/i18n/routing"
-import { SITE_NAME, SITE_URL } from "@/lib/site"
+import {
+  AUTHOR_NAME,
+  AUTHOR_URL,
+  SITE_NAME,
+  SITE_URL,
+} from "@/lib/site"
 
 import "./globals.css"
 
 const inter = Inter({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   variable: "--font-inter",
   weight: ["400", "500"],
+  display: "swap",
 })
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fafafa" },
+    { media: "(prefers-color-scheme: dark)", color: "#211f2a" },
+  ],
+  colorScheme: "light dark",
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale()
   const t = await getTranslations("meta")
   const title = t("title")
   const description = t("description")
+  const keywords = t.raw("keywords") as string[]
   const ogLocale = locale === "pt" ? "pt_BR" : "en_US"
+  const ogLocaleAlternate = locale === "pt" ? "en_US" : "pt_BR"
 
   return {
     metadataBase: new URL(SITE_URL),
     applicationName: SITE_NAME,
-    title,
+    title: {
+      default: title,
+      template: t("titleTemplate"),
+    },
     description,
-    authors: [{ name: "FernaandoJr", url: "https://github.com/FernaandoJr" }],
-    creator: "FernaandoJr",
+    keywords,
+    category: "education",
+    authors: [{ name: AUTHOR_NAME, url: AUTHOR_URL }],
+    creator: AUTHOR_NAME,
+    publisher: AUTHOR_NAME,
+    generator: "Next.js",
+    referrer: "origin-when-cross-origin",
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
+    },
     alternates: {
-      canonical: "/",
-      languages: Object.fromEntries(routing.locales.map((l) => [l, "/"])),
+      languages: {
+        pt: "/",
+        en: "/",
+        "x-default": "/",
+      },
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
     },
     openGraph: {
       type: "website",
       locale: ogLocale,
+      alternateLocale: ogLocaleAlternate,
       url: SITE_URL,
       siteName: SITE_NAME,
       title,
       description,
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title,
       description,
+    },
+    appleWebApp: {
+      capable: true,
+      title: SITE_NAME,
+      statusBarStyle: "default",
     },
   }
 }
@@ -54,7 +103,11 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
   const messages = await getMessages()
 
   return (
-    <html lang={locale} suppressHydrationWarning className={`${inter.variable} h-full`}>
+    <html
+      lang={locale === "pt" ? "pt-BR" : "en"}
+      suppressHydrationWarning
+      className={`${inter.variable} h-full`}
+    >
       <body className="min-h-full font-sans antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NextIntlClientProvider locale={locale} messages={messages}>

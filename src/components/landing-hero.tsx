@@ -12,18 +12,19 @@ export function LandingHero() {
   const t = useTranslations("hero")
 
   return (
-    <main className="relative h-dvh overflow-hidden">
-      <HeroShader className="opacity-25" />
+    <section className="relative h-dvh overflow-hidden">
+      <HeroShader className="!absolute opacity-25" />
 
       <div className="absolute top-2 right-2 z-20">
         <LanguageSwitcher />
       </div>
 
-      <section className="relative z-10 flex h-dvh flex-col overflow-y-auto">
+      <div className="relative z-10 flex h-dvh flex-col overflow-y-auto">
         <div className="container flex min-h-0 flex-1 flex-col items-center justify-center py-8">
           <div className="flex max-w-xl flex-col items-center gap-5 text-center">
             <OwlMark className="size-24 rounded-2xl" />
             <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+              <span className="sr-only">NOW — </span>
               <span className="text-primary">N</span>ext{" "}
               <span className="text-primary">O</span>ne{" "}
               <span className="text-primary">W</span>ord
@@ -40,7 +41,7 @@ export function LandingHero() {
             </Button>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   )
 }

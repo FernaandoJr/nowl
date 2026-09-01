@@ -1,0 +1,18 @@
+# NOW
+
+> Next One Word — a free in-browser RSVP speed reader.
+
+NOW shows one word at a time on a fixed point so you can read long text faster, with less eye travel. Paste something, set a pace, press Now.
+
+- Site: https://now.fernaandojr.dev
+- Reader: https://now.fernaandojr.dev/read
+- Source: https://github.com/FernaandoJr/now
+- License: MIT
+
+## What it is
+
+RSVP (Rapid Serial Visual Presentation). Each word lands on the same spot. Longer words and punctuation get a little more time. Speed is a number from 100 to 700. Portuguese and English. Text stays in this browser.
+
+## Not for
+
+Languages without spaces (CJK). Accounts, sync, or cloud storage.

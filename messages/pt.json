@@ -1,7 +1,19 @@
 {
   "meta": {
-    "title": "NOW",
-    "description": "Next one word — leia uma palavra de cada vez."
+    "title": "NOW — Next One Word",
+    "titleTemplate": "%s · NOW",
+    "description": "Leitor RSVP grátis. Cole um texto e leia uma palavra de cada vez, num ponto fixo — leitura mais rápida, menos deslocamento dos olhos. Sem conta.",
+    "keywords": [
+      "RSVP",
+      "leitura rápida",
+      "leitura dinâmica",
+      "uma palavra de cada vez",
+      "leitor online",
+      "NOW",
+      "next one word"
+    ],
+    "readTitle": "Leitor",
+    "readDescription": "Cole um texto no NOW e leia uma palavra de cada vez. Ajuste o ritmo, pause com Espaço, mude a velocidade com as setas."
   },
   "nav": {
     "languages": "Idiomas",
@@ -16,6 +28,47 @@
   "hero": {
     "body": "O NOW mostra um texto longo uma palavra de cada vez, num ponto fixo, para os olhos não varrerem a página. Cole algo, escolha o ritmo, aperte Now.",
     "openReader": "Abrir leitor"
+  },
+  "landing": {
+    "howTitle": "Como funciona",
+    "steps": [
+      {
+        "title": "Cole",
+        "body": "Artigo, capítulo ou notas. Nada é enviado. O texto fica neste navegador."
+      },
+      {
+        "title": "Escolha o ritmo",
+        "body": "Um número de 100 a 700. Palavras longas e pontuação ganham um pouco mais de tempo."
+      },
+      {
+        "title": "Now",
+        "body": "Cada palavra cai no mesmo ponto. Toque ou Espaço pausa. Esc volta para o texto."
+      }
+    ],
+    "faqTitle": "Perguntas",
+    "faq": [
+      {
+        "q": "O que é o NOW?",
+        "a": "NOW (Next One Word) é um leitor RSVP grátis: mostra uma palavra de cada vez num ponto fixo, para você atravessar um texto longo mais rápido."
+      },
+      {
+        "q": "O que significa RSVP?",
+        "a": "Rapid Serial Visual Presentation. As palavras aparecem uma após a outra no mesmo lugar, então os olhos não varrem a linha."
+      },
+      {
+        "q": "Preciso de conta?",
+        "a": "Não. Sem cadastro. Texto, velocidade e histórico ficam só neste navegador."
+      },
+      {
+        "q": "Quais idiomas funcionam?",
+        "a": "Línguas que separam palavras com espaço — português, inglês, espanhol, francês e semelhantes. Chinês, japonês e coreano ficam de fora."
+      },
+      {
+        "q": "O NOW é um clone do Spritz?",
+        "a": "Usa a mesma ideia de uma palavra por vez, com pivô ORP na cor do tema. Sem letra vermelha e sem conta Spritz."
+      }
+    ],
+    "footer": "MIT · FernaandoJr"
   },
   "compose": {
     "paste": "Cole o texto",
