@@ -43,9 +43,9 @@
     "tagline": "next one word",
     "p1": "A simple reader that shows one word at a time so you can move through long text faster, with less eye travel across the page.",
     "p2": "Paste something you want to read, set a speed, press <now>Now</now>. Each word lands on a fixed point; longer words and punctuation get a little more time.",
-    "shortcutPause": "Tap or Space — pause / resume",
-    "shortcutEsc": "Esc — back to paste",
-    "shortcutEnd": "At the end, tap to return with your text still there",
+    "pause": "Pause / resume",
+    "speedKeys": "Speed",
+    "backPaste": "Back to paste",
     "privacy": "No account. Text and speed stay in this browser only."
   }
 }

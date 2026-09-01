@@ -43,9 +43,9 @@
     "tagline": "next one word",
     "p1": "Um leitor simples que mostra uma palavra de cada vez, para você atravessar um texto longo mais rápido, com menos deslocamento dos olhos.",
     "p2": "Cole o que quiser ler, escolha a velocidade, aperte <now>Now</now>. Cada palavra cai num ponto fixo; palavras longas e pontuação ganham um pouco mais de tempo.",
-    "shortcutPause": "Toque ou Espaço — pausar / continuar",
-    "shortcutEsc": "Esc — voltar para colar",
-    "shortcutEnd": "No fim, toque para voltar com o texto ainda lá",
+    "pause": "Pausar / continuar",
+    "speedKeys": "Velocidade",
+    "backPaste": "Voltar para colar",
     "privacy": "Sem conta. Texto e velocidade ficam só neste navegador."
   }
 }

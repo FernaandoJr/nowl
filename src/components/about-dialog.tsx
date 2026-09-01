@@ -13,6 +13,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
+import { Kbd, KbdGroup } from "@/components/ui/kbd"
 
 export function AboutDialog() {
   const t = useTranslations("about")
@@ -56,10 +57,24 @@ export function AboutDialog() {
               ),
             })}
           </p>
-          <div className="flex flex-col gap-1 text-[13px] text-muted-foreground">
-            <p>{t("shortcutPause")}</p>
-            <p>{t("shortcutEsc")}</p>
-            <p>{t("shortcutEnd")}</p>
+          <div className="flex flex-col gap-2 text-[13px] text-muted-foreground">
+            <div className="flex items-center justify-between gap-3">
+              <span>{t("pause")}</span>
+              <Kbd>Space</Kbd>
+            </div>
+            <div className="flex items-center justify-between gap-3">
+              <span>{t("speedKeys")}</span>
+              <KbdGroup>
+                <Kbd>↑</Kbd>
+                <Kbd>↓</Kbd>
+                <Kbd>←</Kbd>
+                <Kbd>→</Kbd>
+              </KbdGroup>
+            </div>
+            <div className="flex items-center justify-between gap-3">
+              <span>{t("backPaste")}</span>
+              <Kbd>Esc</Kbd>
+            </div>
           </div>
           <p className="text-[13px] text-muted-foreground">{t("privacy")}</p>
         </div>
