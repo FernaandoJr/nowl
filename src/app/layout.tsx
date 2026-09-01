@@ -8,6 +8,8 @@ import { routing } from "@/i18n/routing"
 import {
   AUTHOR_NAME,
   AUTHOR_URL,
+  OG_IMAGE,
+  OG_IMAGE_URL,
   SITE_NAME,
   SITE_URL,
 } from "@/lib/site"
@@ -84,21 +86,13 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: SITE_NAME,
       title,
       description,
-      images: [
-        {
-          url: "/og.png",
-          width: 1200,
-          height: 630,
-          alt: "NOW — next one word. RSVP reader.",
-          type: "image/png",
-        },
-      ],
+      images: [OG_IMAGE],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/og.png"],
+      images: [OG_IMAGE_URL],
     },
     appleWebApp: {
       capable: true,

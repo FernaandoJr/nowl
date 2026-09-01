@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server"
 
 import { JsonLd } from "@/components/json-ld"
 import { buildReadJsonLd } from "@/lib/seo"
-import { SITE_NAME, SITE_URL } from "@/lib/site"
+import { OG_IMAGE, OG_IMAGE_URL, SITE_NAME, SITE_URL } from "@/lib/site"
 
 import { ReadPageClient } from "./read-page-client"
 
@@ -31,21 +31,13 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: SITE_NAME,
       title,
       description,
-      images: [
-        {
-          url: "/og.png",
-          width: 1200,
-          height: 630,
-          alt: "NOW — next one word. RSVP reader.",
-          type: "image/png",
-        },
-      ],
+      images: [OG_IMAGE],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/og.png"],
+      images: [OG_IMAGE_URL],
     },
     robots: {
       index: true,
