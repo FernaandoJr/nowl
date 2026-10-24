@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next"
 import { NextIntlClientProvider } from "next-intl"
 import { getLocale, getMessages, getTranslations } from "next-intl/server"
-import { Inter } from "next/font/google"
 
 import { ThemeProvider } from "@/components/theme-provider"
 import { routing } from "@/i18n/routing"
@@ -15,13 +14,6 @@ import {
 } from "@/lib/site"
 
 import "./globals.css"
-
-const inter = Inter({
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-inter",
-  weight: ["400", "500"],
-  display: "swap",
-})
 
 export const viewport: Viewport = {
   themeColor: [
@@ -110,7 +102,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang={locale === "pt" ? "pt-BR" : "en"}
       suppressHydrationWarning
-      className={`${inter.variable} h-full`}
+      className="h-full"
     >
       <body className="min-h-full font-sans antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
