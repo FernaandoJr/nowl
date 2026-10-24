@@ -7,7 +7,7 @@ type OwlMarkProps = {
 export function OwlMark({ className }: OwlMarkProps) {
   return (
     <img
-      src="/now-ip-a1.svg"
+      src="/nowl-ip-a1.svg"
       alt=""
       width={1024}
       height={1024}

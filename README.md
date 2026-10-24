@@ -1,20 +1,20 @@
 <p align="center">
-  <img src="public/now-ip-a1.svg" width="96" height="96" alt="NOW" />
+  <img src="public/nowl-ip-a1.svg" width="96" height="96" alt="Nowl" />
 </p>
 
-<h1 align="center">NOW</h1>
+<h1 align="center">Nowl</h1>
 
-<p align="center"><strong>next one word</strong> — RSVP reader. Paste a text, read one word at a time.</p>
+<p align="center"><strong>Next One Word Lens</strong> — RSVP reader. Paste a text, read one word at a time.</p>
 
 <p align="center">
-  <a href="https://now.fernaandojr.dev">now.fernaandojr.dev</a>
+  <a href="https://nowl.fernaandojr.dev">nowl.fernaandojr.dev</a>
   ·
-  <a href="https://github.com/FernaandoJr/now">GitHub</a>
+  <a href="https://github.com/FernaandoJr/nowl">GitHub</a>
 </p>
 
 ---
 
-NOW flashes a long text as a single word on a fixed point so your eyes stop scanning the page.
+Nowl flashes a long text as a single word on a fixed point so your eyes stop scanning the page.
 
 ## Features
 

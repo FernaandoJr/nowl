@@ -1,12 +1,12 @@
-# NOW
+# Nowl
 
-> Next One Word — a free in-browser RSVP speed reader.
+> Next One Word Lens — a free in-browser RSVP speed reader.
 
-NOW shows one word at a time on a fixed point so you can read long text faster, with less eye travel. Paste something, set a pace, press Now.
+Nowl shows one word at a time on a fixed point so you can read long text faster, with less eye travel. Paste something, set a pace, press Now.
 
-- Site: https://now.fernaandojr.dev
-- Reader: https://now.fernaandojr.dev/read
-- Source: https://github.com/FernaandoJr/now
+- Site: https://nowl.fernaandojr.dev
+- Reader: https://nowl.fernaandojr.dev/read
+- Source: https://github.com/FernaandoJr/nowl
 - License: MIT
 
 ## What it is

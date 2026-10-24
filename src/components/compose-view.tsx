@@ -43,7 +43,7 @@ export function ComposeView({
           className="h-8 gap-2 px-2 text-[13px] font-medium tracking-[-0.15px]"
         >
           <OwlMark className="size-6 rounded-md" />
-          NOW
+          Nowl
         </Button>
         <div className="flex items-center gap-1">
           <HistoryDialog onSelect={onSelectHistory} />

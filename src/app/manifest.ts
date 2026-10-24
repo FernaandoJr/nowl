@@ -4,7 +4,7 @@ import { SITE_NAME, SITE_URL, THEME_COLOR } from "@/lib/site"
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: `${SITE_NAME} — Next One Word`,
+    name: `${SITE_NAME} — Next One Word Lens`,
     short_name: SITE_NAME,
     description: "RSVP reader. Paste text and read one word at a time.",
     start_url: "/read",
@@ -17,7 +17,7 @@ export default function manifest(): MetadataRoute.Manifest {
     categories: ["education", "productivity", "utilities"],
     icons: [
       {
-        src: "/now-ip-a1.svg",
+        src: "/nowl-ip-a1.svg",
         sizes: "any",
         type: "image/svg+xml",
         purpose: "any",

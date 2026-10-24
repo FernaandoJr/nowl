@@ -24,10 +24,11 @@ export function LandingHero() {
           <div className="flex max-w-xl flex-col items-center gap-5 text-center">
             <OwlMark className="size-24 rounded-2xl" />
             <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
-              <span className="sr-only">NOW — </span>
+              <span className="sr-only">Nowl — </span>
               <span className="text-primary">N</span>ext{" "}
               <span className="text-primary">O</span>ne{" "}
-              <span className="text-primary">W</span>ord
+              <span className="text-primary">W</span>ord{" "}
+              <span className="text-primary">L</span>ens
             </h1>
             <p className="max-w-prose text-base text-foreground sm:text-lg">
               {t("body")}

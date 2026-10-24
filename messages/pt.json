@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "NOW — Next One Word | Leitor RSVP, uma palavra por vez",
-    "titleTemplate": "%s · NOW",
+    "title": "Nowl — Next One Word Lens | Leitor RSVP, uma palavra por vez",
+    "titleTemplate": "%s · Nowl",
     "description": "Leitor RSVP grátis. Cole um texto e leia uma palavra por vez, num ponto fixo.",
     "keywords": [
       "RSVP",
@@ -9,11 +9,11 @@
       "leitura dinâmica",
       "uma palavra de cada vez",
       "leitor online",
-      "NOW",
-      "next one word"
+      "Nowl",
+      "next one word lens"
     ],
-    "readTitle": "NOW — Leitor RSVP: cole texto e leia uma palavra por vez",
-    "readDescription": "Cole um texto no NOW e leia uma palavra de cada vez. Ajuste o ritmo, pause com Espaço."
+    "readTitle": "Nowl — Leitor RSVP: cole texto e leia uma palavra por vez",
+    "readDescription": "Cole um texto no Nowl e leia uma palavra de cada vez. Ajuste o ritmo, pause com Espaço."
   },
   "nav": {
     "languages": "Idiomas",
@@ -26,7 +26,7 @@
     "toDark": "Mudar para escuro"
   },
   "hero": {
-    "body": "O NOW mostra um texto longo uma palavra de cada vez, num ponto fixo, para os olhos não varrerem a página. Cole algo, escolha o ritmo, aperte Now.",
+    "body": "O Nowl mostra um texto longo uma palavra de cada vez, num ponto fixo, para os olhos não varrerem a página. Cole algo, escolha o ritmo, aperte Now.",
     "openReader": "Abrir leitor"
   },
   "landing": {
@@ -48,8 +48,8 @@
     "faqTitle": "Perguntas",
     "faq": [
       {
-        "q": "O que é o NOW?",
-        "a": "NOW (Next One Word) é um leitor RSVP grátis: mostra uma palavra de cada vez num ponto fixo, para você atravessar um texto longo mais rápido."
+        "q": "O que é o Nowl?",
+        "a": "Nowl é um leitor RSVP grátis: mostra uma palavra de cada vez num ponto fixo, para você atravessar um texto longo mais rápido."
       },
       {
         "q": "O que significa RSVP?",
@@ -64,7 +64,7 @@
         "a": "Línguas que separam palavras com espaço — português, inglês, espanhol, francês e semelhantes. Chinês, japonês e coreano ficam de fora."
       },
       {
-        "q": "O NOW é um clone do Spritz?",
+        "q": "O Nowl é um clone do Spritz?",
         "a": "Usa a mesma ideia de uma palavra por vez, com pivô ORP na cor do tema. Sem letra vermelha e sem conta Spritz."
       }
     ],
@@ -91,9 +91,9 @@
     "clear": "Limpar"
   },
   "about": {
-    "aria": "Sobre o NOW",
-    "title": "NOW",
-    "tagline": "next one word",
+    "aria": "Sobre o Nowl",
+    "title": "Nowl",
+    "tagline": "Next One Word Lens",
     "p1": "Um leitor simples que mostra uma palavra de cada vez, para você atravessar um texto longo mais rápido, com menos deslocamento dos olhos.",
     "p2": "Cole o que quiser ler, escolha a velocidade, aperte <now>Now</now>. Cada palavra cai num ponto fixo; palavras longas e pontuação ganham um pouco mais de tempo.",
     "pause": "Pausar / continuar",
