@@ -13,6 +13,6 @@ export const OG_IMAGE = {
   url: OG_IMAGE_URL,
   width: 1200,
   height: 630,
-  alt: "Nowl — Next One Word Lens. RSVP reader.",
+  alt: "Nowl · Next One Word Lens. RSVP reader.",
   type: "image/png",
 } as const

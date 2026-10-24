@@ -1,103 +1,103 @@
 {
-  "meta": {
-    "title": "Nowl — Next One Word Lens | RSVP reader, one word at a time",
-    "titleTemplate": "%s · Nowl",
-    "description": "Free RSVP reader. Paste a text and read one word at a time, at a fixed point.",
-    "keywords": [
-      "RSVP",
-      "speed reading",
-      "one word at a time",
-      "rapid serial visual presentation",
-      "online reader",
-      "Nowl",
-      "next one word lens"
-    ],
-    "readTitle": "Nowl — RSVP reader: paste text and read one word at a time",
-    "readDescription": "Paste a text in Nowl and read one word at a time. Set the pace, pause with Space."
-  },
-  "nav": {
-    "languages": "Languages",
-    "portuguese": "Portuguese",
-    "english": "English"
-  },
-  "theme": {
-    "toggle": "Toggle theme",
-    "toLight": "Switch to light",
-    "toDark": "Switch to dark"
-  },
-  "hero": {
-    "body": "Nowl flashes a long text as a single word on a fixed point, so your eyes stop scanning the page. Paste something, set a pace, press Now.",
-    "openReader": "Open reader"
-  },
-  "landing": {
-    "howTitle": "How it works",
-    "steps": [
-      {
-        "title": "Paste",
-        "body": "Drop in an article, chapter, or notes. Nothing is uploaded. It stays in this browser."
-      },
-      {
-        "title": "Set the pace",
-        "body": "Pick a number from 100 to 700. Longer words and punctuation get a little more time."
-      },
-      {
-        "title": "Now",
-        "body": "Each word lands on the same point. Tap or Space pauses. Esc brings you back to the text."
-      }
-    ],
-    "faqTitle": "FAQ",
-    "faq": [
-      {
-        "q": "What is Nowl?",
-        "a": "Nowl is a free RSVP reader: it shows one word at a time on a fixed point so you can move through long text faster."
-      },
-      {
-        "q": "What does RSVP mean?",
-        "a": "Rapid Serial Visual Presentation. Words appear one after another in the same place, so your eyes do not scan across a line."
-      },
-      {
-        "q": "Do I need an account?",
-        "a": "No. There is no sign-up. Text, speed, and history stay only in this browser."
-      },
-      {
-        "q": "Which languages work?",
-        "a": "Languages that use spaces between words — Portuguese, English, Spanish, French, and similar. Chinese, Japanese, and Korean are out of scope."
-      },
-      {
-        "q": "Is Nowl a Spritz clone?",
-        "a": "It uses the same one-word idea, with an ORP pivot in the theme color. There is no red letter and no Spritz account."
-      }
-    ],
-    "footer": "MIT · FernaandoJr"
-  },
-  "compose": {
-    "paste": "Paste text",
-    "textLabel": "Text to read",
-    "now": "Now",
-    "speed": "Reading speed"
-  },
-  "read": {
-    "back": "Back",
-    "progress": "Reading progress",
-    "pause": "Pause",
-    "resume": "Resume",
-    "finished": "Finished, go back"
-  },
-  "history": {
-    "aria": "Reading history",
-    "title": "History",
-    "description": "Previous readings in this browser",
-    "empty": "None yet.",
-    "clear": "Clear"
-  },
-  "about": {
-    "aria": "About Nowl",
-    "title": "Nowl",
-    "tagline": "Next One Word Lens",
-    "p1": "A simple reader that shows one word at a time so you can move through long text faster, with less eye travel across the page.",
-    "p2": "Paste something you want to read, set a speed, press <now>Now</now>. Each word lands on a fixed point; longer words and punctuation get a little more time.",
-    "pause": "Pause / resume",
-    "speedKeys": "Speed",
-    "backPaste": "Back to paste"
-  }
+	"meta": {
+		"title": "Nowl · Next One Word Lens | RSVP reader, one word at a time",
+		"titleTemplate": "%s · Nowl",
+		"description": "Free RSVP reader. Paste a text and read one word at a time, at a fixed point.",
+		"keywords": [
+			"RSVP",
+			"speed reading",
+			"one word at a time",
+			"rapid serial visual presentation",
+			"online reader",
+			"Nowl",
+			"next one word lens"
+		],
+		"readTitle": "Nowl · RSVP reader: paste text and read one word at a time",
+		"readDescription": "Paste a text in Nowl and read one word at a time. Set the pace, pause with Space."
+	},
+	"nav": {
+		"languages": "Languages",
+		"portuguese": "Portuguese",
+		"english": "English"
+	},
+	"theme": {
+		"toggle": "Toggle theme",
+		"toLight": "Switch to light",
+		"toDark": "Switch to dark"
+	},
+	"hero": {
+		"body": "Nowl flashes a long text as a single word on a fixed point, so your eyes stop scanning the page. Paste something, set a pace, press Now.",
+		"openReader": "Open reader"
+	},
+	"landing": {
+		"howTitle": "How it works",
+		"steps": [
+			{
+				"title": "Paste",
+				"body": "Drop in an article, chapter, or notes. Nothing is uploaded. It stays in this browser."
+			},
+			{
+				"title": "Set the pace",
+				"body": "Pick a number from 100 to 700. Longer words and punctuation get a little more time."
+			},
+			{
+				"title": "Now",
+				"body": "Each word lands on the same point. Tap or Space pauses. Esc brings you back to the text."
+			}
+		],
+		"faqTitle": "FAQ",
+		"faq": [
+			{
+				"q": "What is Nowl?",
+				"a": "Nowl is a free RSVP reader: it shows one word at a time on a fixed point so you can move through long text faster."
+			},
+			{
+				"q": "What does RSVP mean?",
+				"a": "Rapid Serial Visual Presentation. Words appear one after another in the same place, so your eyes do not scan across a line."
+			},
+			{
+				"q": "Do I need an account?",
+				"a": "No. There is no sign-up. Text, speed, and history stay only in this browser."
+			},
+			{
+				"q": "Which languages work?",
+				"a": "Languages that use spaces between words: Portuguese, English, Spanish, French, and similar. Chinese, Japanese, and Korean are out of scope."
+			},
+			{
+				"q": "Is Nowl a Spritz clone?",
+				"a": "It uses the same one-word idea, with an ORP pivot in the theme color. There is no red letter and no Spritz account."
+			}
+		],
+		"footer": "MIT · FernaandoJr"
+	},
+	"compose": {
+		"paste": "Paste text",
+		"textLabel": "Text to read",
+		"now": "Now",
+		"speed": "Reading speed"
+	},
+	"read": {
+		"back": "Back",
+		"progress": "Reading progress",
+		"pause": "Pause",
+		"resume": "Resume",
+		"finished": "Finished, go back"
+	},
+	"history": {
+		"aria": "Reading history",
+		"title": "History",
+		"description": "Previous readings in this browser",
+		"empty": "None yet.",
+		"clear": "Clear"
+	},
+	"about": {
+		"aria": "About Nowl",
+		"title": "Nowl",
+		"tagline": "Next One Word Lens",
+		"p1": "A simple reader that shows one word at a time so you can move through long text faster, with less eye travel across the page.",
+		"p2": "Paste something you want to read, set a speed, press <now>Now</now>. Each word lands on a fixed point; longer words and punctuation get a little more time.",
+		"pause": "Pause / resume",
+		"speedKeys": "Speed",
+		"backPaste": "Back to paste"
+	}
 }

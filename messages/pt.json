@@ -1,103 +1,103 @@
 {
-  "meta": {
-    "title": "Nowl — Next One Word Lens | Leitor RSVP, uma palavra por vez",
-    "titleTemplate": "%s · Nowl",
-    "description": "Leitor RSVP grátis. Cole um texto e leia uma palavra por vez, num ponto fixo.",
-    "keywords": [
-      "RSVP",
-      "leitura rápida",
-      "leitura dinâmica",
-      "uma palavra de cada vez",
-      "leitor online",
-      "Nowl",
-      "next one word lens"
-    ],
-    "readTitle": "Nowl — Leitor RSVP: cole texto e leia uma palavra por vez",
-    "readDescription": "Cole um texto no Nowl e leia uma palavra de cada vez. Ajuste o ritmo, pause com Espaço."
-  },
-  "nav": {
-    "languages": "Idiomas",
-    "portuguese": "Português",
-    "english": "Inglês"
-  },
-  "theme": {
-    "toggle": "Alternar tema",
-    "toLight": "Mudar para claro",
-    "toDark": "Mudar para escuro"
-  },
-  "hero": {
-    "body": "O Nowl mostra um texto longo uma palavra de cada vez, num ponto fixo, para os olhos não varrerem a página. Cole algo, escolha o ritmo, aperte Now.",
-    "openReader": "Abrir leitor"
-  },
-  "landing": {
-    "howTitle": "Como funciona",
-    "steps": [
-      {
-        "title": "Cole",
-        "body": "Artigo, capítulo ou notas. Nada é enviado. O texto fica neste navegador."
-      },
-      {
-        "title": "Escolha o ritmo",
-        "body": "Um número de 100 a 700. Palavras longas e pontuação ganham um pouco mais de tempo."
-      },
-      {
-        "title": "Now",
-        "body": "Cada palavra cai no mesmo ponto. Toque ou Espaço pausa. Esc volta para o texto."
-      }
-    ],
-    "faqTitle": "Perguntas",
-    "faq": [
-      {
-        "q": "O que é o Nowl?",
-        "a": "Nowl é um leitor RSVP grátis: mostra uma palavra de cada vez num ponto fixo, para você atravessar um texto longo mais rápido."
-      },
-      {
-        "q": "O que significa RSVP?",
-        "a": "Rapid Serial Visual Presentation. As palavras aparecem uma após a outra no mesmo lugar, então os olhos não varrem a linha."
-      },
-      {
-        "q": "Preciso de conta?",
-        "a": "Não. Sem cadastro. Texto, velocidade e histórico ficam só neste navegador."
-      },
-      {
-        "q": "Quais idiomas funcionam?",
-        "a": "Línguas que separam palavras com espaço — português, inglês, espanhol, francês e semelhantes. Chinês, japonês e coreano ficam de fora."
-      },
-      {
-        "q": "O Nowl é um clone do Spritz?",
-        "a": "Usa a mesma ideia de uma palavra por vez, com pivô ORP na cor do tema. Sem letra vermelha e sem conta Spritz."
-      }
-    ],
-    "footer": "MIT · FernaandoJr"
-  },
-  "compose": {
-    "paste": "Cole o texto",
-    "textLabel": "Texto para ler",
-    "now": "Now",
-    "speed": "Velocidade da leitura"
-  },
-  "read": {
-    "back": "Voltar",
-    "progress": "Progresso da leitura",
-    "pause": "Pausar",
-    "resume": "Continuar",
-    "finished": "Fim, voltar"
-  },
-  "history": {
-    "aria": "Histórico de leituras",
-    "title": "Histórico",
-    "description": "Leituras anteriores neste navegador",
-    "empty": "Nenhuma ainda.",
-    "clear": "Limpar"
-  },
-  "about": {
-    "aria": "Sobre o Nowl",
-    "title": "Nowl",
-    "tagline": "Next One Word Lens",
-    "p1": "Um leitor simples que mostra uma palavra de cada vez, para você atravessar um texto longo mais rápido, com menos deslocamento dos olhos.",
-    "p2": "Cole o que quiser ler, escolha a velocidade, aperte <now>Now</now>. Cada palavra cai num ponto fixo; palavras longas e pontuação ganham um pouco mais de tempo.",
-    "pause": "Pausar / continuar",
-    "speedKeys": "Velocidade",
-    "backPaste": "Voltar para colar"
-  }
+	"meta": {
+		"title": "Nowl · Next One Word Lens | Leitor RSVP, uma palavra por vez",
+		"titleTemplate": "%s · Nowl",
+		"description": "Leitor RSVP grátis. Cole um texto e leia uma palavra por vez, num ponto fixo.",
+		"keywords": [
+			"RSVP",
+			"leitura rápida",
+			"leitura dinâmica",
+			"uma palavra de cada vez",
+			"leitor online",
+			"Nowl",
+			"next one word lens"
+		],
+		"readTitle": "Nowl · Leitor RSVP: cole texto e leia uma palavra por vez",
+		"readDescription": "Cole um texto no Nowl e leia uma palavra de cada vez. Ajuste o ritmo, pause com Espaço."
+	},
+	"nav": {
+		"languages": "Idiomas",
+		"portuguese": "Português",
+		"english": "Inglês"
+	},
+	"theme": {
+		"toggle": "Alternar tema",
+		"toLight": "Mudar para claro",
+		"toDark": "Mudar para escuro"
+	},
+	"hero": {
+		"body": "O Nowl mostra um texto longo uma palavra de cada vez, num ponto fixo, para os olhos não varrerem a página. Cole algo, escolha o ritmo, aperte Now.",
+		"openReader": "Abrir leitor"
+	},
+	"landing": {
+		"howTitle": "Como funciona",
+		"steps": [
+			{
+				"title": "Cole",
+				"body": "Artigo, capítulo ou notas. Nada é enviado. O texto fica neste navegador."
+			},
+			{
+				"title": "Escolha o ritmo",
+				"body": "Um número de 100 a 700. Palavras longas e pontuação ganham um pouco mais de tempo."
+			},
+			{
+				"title": "Now",
+				"body": "Cada palavra cai no mesmo ponto. Toque ou Espaço pausa. Esc volta para o texto."
+			}
+		],
+		"faqTitle": "Perguntas",
+		"faq": [
+			{
+				"q": "O que é o Nowl?",
+				"a": "Nowl é um leitor RSVP grátis: mostra uma palavra de cada vez num ponto fixo, para você atravessar um texto longo mais rápido."
+			},
+			{
+				"q": "O que significa RSVP?",
+				"a": "Rapid Serial Visual Presentation. As palavras aparecem uma após a outra no mesmo lugar, então os olhos não varrem a linha."
+			},
+			{
+				"q": "Preciso de conta?",
+				"a": "Não. Sem cadastro. Texto, velocidade e histórico ficam só neste navegador."
+			},
+			{
+				"q": "Quais idiomas funcionam?",
+				"a": "Línguas que separam palavras com espaço: português, inglês, espanhol, francês e semelhantes. Chinês, japonês e coreano ficam de fora."
+			},
+			{
+				"q": "O Nowl é um clone do Spritz?",
+				"a": "Usa a mesma ideia de uma palavra por vez, com pivô ORP na cor do tema. Sem letra vermelha e sem conta Spritz."
+			}
+		],
+		"footer": "MIT · FernaandoJr"
+	},
+	"compose": {
+		"paste": "Cole o texto",
+		"textLabel": "Texto para ler",
+		"now": "Now",
+		"speed": "Velocidade da leitura"
+	},
+	"read": {
+		"back": "Voltar",
+		"progress": "Progresso da leitura",
+		"pause": "Pausar",
+		"resume": "Continuar",
+		"finished": "Fim, voltar"
+	},
+	"history": {
+		"aria": "Histórico de leituras",
+		"title": "Histórico",
+		"description": "Leituras anteriores neste navegador",
+		"empty": "Nenhuma ainda.",
+		"clear": "Limpar"
+	},
+	"about": {
+		"aria": "Sobre o Nowl",
+		"title": "Nowl",
+		"tagline": "Next One Word Lens",
+		"p1": "Um leitor simples que mostra uma palavra de cada vez, para você atravessar um texto longo mais rápido, com menos deslocamento dos olhos.",
+		"p2": "Cole o que quiser ler, escolha a velocidade, aperte <now>Now</now>. Cada palavra cai num ponto fixo; palavras longas e pontuação ganham um pouco mais de tempo.",
+		"pause": "Pausar / continuar",
+		"speedKeys": "Velocidade",
+		"backPaste": "Voltar para colar"
+	}
 }

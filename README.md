@@ -4,7 +4,7 @@
 
 <h1 align="center">Nowl</h1>
 
-<p align="center"><strong>Next One Word Lens</strong> — RSVP reader. Paste a text, read one word at a time.</p>
+<p align="center"><strong>Next One Word Lens</strong>: RSVP reader. Paste a text, read one word at a time.</p>
 
 <p align="center">
   <a href="https://nowl.fernaandojr.dev">nowl.fernaandojr.dev</a>
@@ -20,7 +20,7 @@ Nowl flashes a long text as a single word on a fixed point so your eyes stop sca
 
 - Paste → set pace → **Now**. Fullscreen RSVP with an ORP pivot letter (theme color, not Spritz red).
 - Smart timing: longer words and punctuation get extra dwell.
-- Speed 100–700 (default 250). The UI shows the number only, never “WPM”. Arrow keys change speed by 10.
+- Speed 100-700 (default 250). The UI shows the number only, never “WPM”. Arrow keys change speed by 10.
 - Pause / resume (tap or Space). Esc returns to paste. End of text stays on the last word until you go back.
 - Last text, speed, and up to 20 previous readings in `localStorage`.
 - Light / dark theme. PT / EN via cookie (`NEXT_LOCALE`), no locale in the URL.
@@ -32,26 +32,26 @@ Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 · shadcn/ui (B
 
 ## Usage
 
-| | |
-| --- | --- |
-| `/` | Landing |
+|         |                                         |
+| ------- | --------------------------------------- |
+| `/`     | Landing                                 |
 | `/read` | Paste, speed, history, about, then RSVP |
 
-| Key | Action |
-| --- | --- |
+| Key         | Action                                     |
+| ----------- | ------------------------------------------ |
 | Space / tap | Pause or resume. At the end, back to paste |
-| ↑ ↓ ← → | Speed ±10 |
-| Esc | Back to paste |
+| ↑ ↓ ← →     | Speed ±10                                  |
+| Esc         | Back to paste                              |
 
 ## Storage
 
 Keys in this browser only:
 
-| Key | What |
-| --- | --- |
-| `now:v1` | Current text + speed |
+| Key           | What                     |
+| ------------- | ------------------------ |
+| `now:v1`      | Current text + speed     |
 | `now:history` | Last 20 started readings |
-| `NEXT_LOCALE` | `pt` or `en` |
+| `NEXT_LOCALE` | `pt` or `en`             |
 
 ## Setup
 
