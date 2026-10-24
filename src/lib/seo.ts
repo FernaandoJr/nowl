@@ -9,29 +9,17 @@ import {
   SITE_URL,
 } from "@/lib/site"
 
-type FaqItem = {
-  question: string
-  answer: string
-}
-
 type JsonLdInput = {
   locale: string
   name: string
   description: string
-  faq: FaqItem[]
 }
 
 export function jsonLdScript(data: unknown) {
   return JSON.stringify(data).replace(/</g, "\\u003c")
 }
 
-export function buildHomeJsonLd({
-  locale,
-  name,
-  description,
-  faq,
-}: JsonLdInput) {
-  const language = locale === "pt" ? "pt-BR" : "en"
+export function buildHomeJsonLd({ locale, name, description }: JsonLdInput) {
   const logo = `${SITE_URL}${LOGO_PATH}`
   const image = `${SITE_URL}${OG_IMAGE_PATH}`
   const websiteId = `${SITE_URL}/#website`
@@ -88,19 +76,6 @@ export function buildHomeJsonLd({
           "Light and dark theme",
         ],
         isPartOf: { "@id": websiteId },
-      },
-      {
-        "@type": "FAQPage",
-        "@id": `${SITE_URL}/#faq`,
-        inLanguage: language,
-        mainEntity: faq.map((item) => ({
-          "@type": "Question",
-          name: item.question,
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: item.answer,
-          },
-        })),
       },
     ],
   }

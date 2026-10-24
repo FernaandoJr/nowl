@@ -23,13 +23,6 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function Home() {
 	const locale = await getLocale()
 	const meta = await getTranslations("meta")
-	const landing = await getTranslations("landing")
-	const faq = (landing.raw("faq") as { q: string; a: string }[]).map(
-		(item) => ({
-			question: item.q,
-			answer: item.a,
-		}),
-	)
 
 	return (
 		<main>
@@ -38,7 +31,6 @@ export default async function Home() {
 					locale,
 					name: meta("title"),
 					description: meta("description"),
-					faq,
 				})}
 			/>
 			<LandingHero />
