@@ -1,0 +1,22 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "nowl",
+	"main": ".open-next/worker.js",
+	"compatibility_date": "2026-10-19",
+	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+	"assets": {
+		// Static assets built by OpenNext (like /og.png, /nowl-ip-a1.svg)
+		"directory": ".open-next/assets",
+		"binding": "ASSETS"
+	},
+	"services": [
+		{
+			// Self-reference service binding, the service name must match the worker name
+			"binding": "WORKER_SELF_REFERENCE",
+			"service": "nowl"
+		}
+	],
+	"observability": {
+		"enabled": true
+	}
+}

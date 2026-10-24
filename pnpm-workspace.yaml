@@ -1,8 +1,12 @@
 packages:
   - "."
 
+nodeLinker: hoisted
+
 allowBuilds:
   "@parcel/watcher": false
   "@swc/core": true
+  esbuild: true
   sharp: true
   unrs-resolver: false
+  workerd: true
